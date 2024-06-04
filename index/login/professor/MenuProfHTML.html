@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Escolha</title>
+    <link rel="stylesheet" href="MenuProfHTML.css"> 
+</head>
+<body onclick="scrollToTop()">
+    <header>
+        <div class="header-bar">
+            <ul>
+                <li><a href="#cadastro_aluno" onclick="toggleVisibility('cadastro_aluno')">Cadastro</a></li>
+                <li><a href="#alunos_ativos" onclick="toggleVisibility('alunos_ativos')">Alunos</a></li>
+                <li><a href="#treino" onclick="toggleVisibility('treino')">Treino</a></li>
+                <li><a href="#objetivo_do_treino" onclick="toggleVisibility('objetivo_do_treino')">Objetivo</a></li>
+                <li><a href="#faturas" onclick="toggleVisibility('faturas')">Faturas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <div id="cadastro_aluno" class="hidden"></div>
+    <div id="alunos_ativos" class="hidden"></div>
+    <div id="treino" class="hidden"></div>
+    <div id="objetivo_do_treino" class="hidden"></div>
+    <div id="faturas" class="hidden"></div>
+
+    <script src="MenuProfHTML.js"></script> 
+</body>
+</html>

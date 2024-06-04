@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFIT-PERSONAL</title>
+    <link rel="stylesheet" href="login.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="login-aluno">
+            <h2>Aluno</h2>
+            <label for="email-aluno">Usuário:</label>
+            <input type="email" id="email-aluno" name="email" required>
+            <label for="password-aluno">Senha:</label>
+            <input type="password" id="password-aluno" name="password" required>
+            <button onclick="window.location.href = 'aluno/MenuAluno.html'">Entrar</button>
+        </div>
+
+        <div class="login-personal">
+            <h2>Personal</h2>
+            <label for="email-personal">Usuário:</label>
+            <input type="email" id="email-personal" name="email" required>
+            <label for="password-personal">Senha:</label>
+            <input type="password" id="password-personal" name="password" required>
+            <button class="botao2" onclick="window.location.href='professor/MenuProfHTML.html';">Entrar</button>
+
+        </div>
+    </div>
+</body>
+</html>

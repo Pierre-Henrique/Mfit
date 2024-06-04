@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Escolha</title>
+</head>
+<body>
+    <h1>Menu de Escolha</h1>
+    <ul>
+        <li><a href="#treino_aluno">Treino</a></li>
+        <li><a href="#objetivos_aluno">Objetivo</a></li>
+        <li><a href="#fatura_aluno">Fatura</a></li>
+    
+    </ul>
+
+    <!-- Treino do Aluno -->
+    <div id="treino_aluno">
+        <h2>Treino do Aluno</h2>
+        <p>Treino 1 - Quadríceps</p>
+        <ul>
+            <li>Cadeira Extensora 4x12</li>
+            <li>Agachamento 5x10</li>
+            <li>Leg Press 45° 4x8</li>
+        </ul>
+    </div>
+
+    <!-- Objetivo do Aluno -->
+    <div id="objetivos_aluno">
+        <h3>Objetivo</h3>
+        <ul>
+            <li>Hipertrofia</li>
+            <li>O aluno deseja ganhar massa muscular, 
+                para ter o aumento do tamanho e do volume dos músculos. 
+                Para isso, deve ter um treino mais focado na hipertrofia muscular.</li>
+        </ul>
+    </div>
+
+
+    <!-- Fatura -->
+    <div id="fatura_aluno">
+        <h4>Fatura</h4>
+    <ul>
+        <li>Seu professor ainda não lançou nenhum plano ou fatura.</li>
+    </ul>
+    </div>
+
+    <style>
+        /* Esconder todos os conteúdos, exceto o alvo */
+        div {
+            display: none;
+        }
+
+        /* Exibir o conteúdo alvo */
+        :target {
+            display: block;
+        }
+    </style>
+</body>
+</html>

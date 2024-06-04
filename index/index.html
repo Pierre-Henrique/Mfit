@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFIT-PERSONAL</title>
+    <link rel="stylesheet" href="inex.css">
+    <script src="index.js" defer></script> <!-- Referência ao arquivo JavaScript externo -->
+</head>
+<body>
+    <header class="cabecalho">
+        <nav>
+            <ul class="menu">
+                <li><a href="#" id="disciplina" class="button-like" onclick="showText('disciplina')">Disciplina</a></li>
+                <li><a href="#" id="grupo" class="button-like" onclick="showText('grupo')">Grupo</a></li>
+                <li><a href="#" id="projeto" class="button-like" onclick="showText('projeto')">Projeto</a></li>
+                <li><a href="#" id="prototipo" class="button-like" onclick="showText('prototipo')">Protótipo</a></li>
+            </ul>
+        </nav>
+        <div class="menu-direito">
+            <p style="font-size: 30px; font-weight: bold;">
+                Registre-se agora<br>
+                <span>para ter</span>
+                <span>acesso completo ao</span>
+                <span>nosso serviço!</span>
+            </p>
+            <button onclick="window.location.href = 'login/login.html'">Entrar</button>
+            <button onclick="window.location.href = 'registre/registre.html'">Registrar-se</button>
+        </div>
+    </header>
+
+    <main class="home">
+        <div class="overlay" id="overlay" onclick="hideText()">
+            <div class="overlay-content">
+                <p id="overlay-text">Texto da caixa de texto...</p>
+            </div>
+        </div>
+        <div class="fundo" id="content">
+            <img src="imagens/Frase-Motivacional.png" alt="frase motivacional">
+        </div>
+    </main>
+</body>
+</html>

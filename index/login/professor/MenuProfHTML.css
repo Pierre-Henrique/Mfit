@@ -1,0 +1,66 @@
+body {
+    color: antiquewhite;
+    background-image: url(imagens/back.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos da barra laranja no topo */
+header {
+    background-color: #c7721d;
+    padding: 10px;
+}
+
+/* links dentro da barra */
+header .header-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header .header-bar ul li {
+    display: inline;
+    margin-right: 70px;
+}
+
+header .header-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+header .header-bar ul li a:hover {
+    color: #ff7300;
+}
+
+/* Classe para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* informações dentro das opções de menu */
+#cadastro_aluno,
+#alunos_ativos,
+#treino,
+#objetivo_do_treino,
+#faturas {
+    display: none; /* Oculta as informações  */
+    position: absolute; /* Posição absoluta para centralizar */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo transparente */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+/* Mostra as informações quando a opção correspondente é clicada */
+#cadastro_aluno:target,
+#alunos_ativos:target,
+#treino:target,
+#objetivo_do_treino:target,
+#faturas:target {
+    display: block; /* Exibe as informações */
+}

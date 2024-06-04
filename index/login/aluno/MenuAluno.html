@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Escolha</title>
+    <link rel="stylesheet" href="aluno.css"> <!-- Vinculando o arquivo CSS externo -->
+    <style>
+        /* Estilo para o container central */
+        .container {
+            max-width: 600px; /* Ajuste conforme necessário */
+            margin: 0 auto; /* Centraliza o container */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Estilo para o cabeçalho */
+        h1 {
+            color: #ff7300;
+        }
+
+        /* Estilo para os botões */
+        button {
+            background-color: #c7721d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ff7300;
+        }
+
+        /* Estilo para o conteúdo */
+        .content {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu de Escolha</h1>
+        <ul>
+            <li><button onclick="showContent('treino_aluno')">Treino</button></li>
+            <li><button onclick="showContent('objetivos_aluno')">Objetivo</button></li>
+            <li><button onclick="showContent('fatura_aluno')">Fatura</button></li>
+        </ul>
+
+        <!-- Treino do Aluno -->
+        <div id="treino_aluno" class="content hidden">
+            <h2>Treino do Aluno</h2>
+            <p>Treino 1 - Quadríceps</p>
+            <ul>
+                <li>Cadeira Extensora 4x12</li>
+                <li>Agachamento 5x10</li>
+                <li>Leg Press 45° 4x8</li>
+            </ul>
+        </div>
+
+        <!-- Objetivo do Aluno -->
+        <div id="objetivos_aluno" class="content hidden">
+            <h2>Objetivo do Aluno</h2>
+            <ul>
+                <li>Hipertrofia</li>
+                <li>O aluno deseja ganhar massa muscular, para ter o aumento do tamanho e do volume dos músculos. Para isso, deve ter um treino mais focado na hipertrofia muscular.</li>
+            </ul>
+        </div>
+
+        <!-- Fatura -->
+        <div id="fatura_aluno" class="content hidden">
+            <h2>Fatura</h2>
+            <ul>
+                <li>Seu professor ainda não lançou nenhum plano ou fatura.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Vinculando o arquivo JavaScript externo -->
+</body>
+</html>
